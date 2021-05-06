@@ -1,0 +1,153 @@
+<!--
+*   activity_main.xml
+*
+*   @author Alexandre Louis <Alexandre_Louis@outlook.fr>
+*
+*   08/12/2020
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <Button
+        android:id="@+id/onBtn"
+        android:drawableLeft="@drawable/bluetooth_logo"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="Activer"
+        android:minWidth="100dp"/>
+
+    <Button
+        android:id="@+id/devicesBtn"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_toRightOf="@+id/onBtn"
+        android:text="co"
+        android:minWidth="200dp"/>
+
+    <Button
+        android:id="@+id/btn_view_paired"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_toRightOf="@+id/devicesBtn"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:enabled="false"
+        android:text="Appareils" />
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystick"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/onBtn"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="100dp"
+        custom:JV_buttonSizeRatio="40%"
+        custom:JV_backgroundSizeRatio="60%"
+        android:scaleX="2"
+        android:scaleY="2"/>
+
+    <TextView
+        android:id="@+id/textLights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lights"
+        android:layout_marginStart="440dp"
+        android:text="@string/phares"
+        android:textSize="28sp" />
+
+    <Switch
+        android:id="@+id/lights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/onBtn"
+        android:layout_marginLeft="455dp"
+        android:layout_marginTop="15dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:textSize="15sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/leftInd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lights"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="30dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/g"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/rightInd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lights"
+        android:layout_marginLeft="530dp"
+        android:layout_marginTop="30dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/d"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/rightInd"
+        android:scaleX="2"
+        android:scaleY="5"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/horn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speed"
+        android:layout_marginLeft="440dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/klaxon" />
+
+    <TextView
+    android:id="@+id/etat_bluetooth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="12sp"
+    android:textColor="#ff0000"
+    android:layout_below="@+id/onBtn"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="25dp"
+    android:text="@string/text_bluetooth_off" />
+
+    <TextView
+        android:id="@+id/lblConnectedDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#3F51B5"
+        android:layout_below="@+id/etat_bluetooth"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Déconnecté" />
+
+    
+
+
+
+</RelativeLayout>

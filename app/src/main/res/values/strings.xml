@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroBluetooth</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="text_bluetooth_off">Bluetooth Off</string>
+    <string name="text_bluetooth_on">Bluetooth On</string>
+    
+    <string name="text_enable">Activer</string>
+    <string name="text_disable">Désactiver</string>
+    
+    <string name="text_view_paired">Périphériques appairés</string>
+    <string name="text_scan_devices">Scan Appareils</string>
+    <string name="text_stop_scan">Scan Appareils</string>
+    
+    <string name="text_list_paired_devices">Périphériques appairés</string>
+    <string name="text_list_devices">Liste des périphériques</string>
+    
+    <string name="text_pair">Connecter</string>
+    <string name="phares">phares</string>
+    <string name="g">g</string>
+    <string name="d">d</string>
+    <string name="klaxon">klaxon</string>
+
+</resources>

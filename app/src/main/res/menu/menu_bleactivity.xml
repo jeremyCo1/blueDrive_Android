@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="stop"
+        android:id="@+id/menu_stop"/>
+    <item android:title="scan"
+        android:id="@+id/menu_scan"/>
+    <item android:title="refresh"
+        android:id="@+id/menu_refresh"/>
+</menu>
